@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería</title>
+    <link href="../css/style_galeria.css" rel="stylesheet" />
+    <link href="css/styles.css" rel="stylesheet" />
+</head>
+
+<body class="bodyGaleria">
+    <a href="../index.html"><h3 class="text-white-50 mx-auto mt-2 mb-5"><strong>Volver</strong></h3></a>
+
+    <br><br><br>
+    <div class="row">
+        <div class="column">
+            <img src="../assets/img/galeria/varios/small/1.jpeg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+        </div>
+        <div class="column">
+            <img src="../assets/img/galeria/varios/small/2.jpeg" onclick="openModal();currentSlide(2)" class="hover-shadow">
+        </div>
+        <div class="column">
+            <img src="../assets/img/galeria/varios/small/3.jpeg" onclick="openModal();currentSlide(3)" class="hover-shadow">
+        </div>
+
+        <div class="column">
+            <img src="../assets/img/galeria/varios/small/4.jpeg" onclick="openModal();currentSlide(4)" class="hover-shadow">
+        </div>
+        <div class="column">
+            <img src="../assets/img/galeria/varios/small/5.jpeg" onclick="openModal();currentSlide(5)" class="hover-shadow">
+        </div>
+        <div class="column">
+            <img src="../assets/img/galeria/varios/small/6.jpeg" onclick="openModal();currentSlide(6)" class="hover-shadow">
+        </div>
+        <div class="column">
+            <img src="../assets/img/galeria/varios/small/7.jpeg" onclick="openModal();currentSlide(7)" class="hover-shadow">
+        </div>
+    </div>
+
+    <!-- The Modal/Lightbox -->
+    <div id="myModal" class="modal">
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+            <div class="mySlides">
+                <div class="numbertext"></div>
+                <img src="../assets/img/galeria/varios/big/1.jpeg" style="width:100%">
+            </div>
+            <div class="mySlides">
+                <div class="numbertext"></div>
+                <img src="../assets/img/galeria/varios/big/2.jpeg" style="width:100%">
+            </div>
+            <div class="mySlides">
+                <div class="numbertext"></div>
+                <img src="../assets/img/galeria/varios/big/3.jpeg" style="width:100%">
+            </div>
+            <div class="mySlides">
+                <div class="numbertext"></div>
+                <img src="../assets/img/galeria/varios/big/4.jpeg" style="width:100%">
+            </div>
+            <div class="mySlides">
+                <div class="numbertext"></div>
+                <img src="../assets/img/galeria/varios/big/5.jpeg" style="width:100%">
+            </div>
+            <div class="mySlides">
+                <div class="numbertext"></div>
+                <img src="../assets/img/galeria/varios/big/6.jpeg" style="width:100%">
+            </div>
+            <div class="mySlides">
+                <div class="numbertext"></div>
+                <img src="../assets/img/galeria/varios/big/7.jpeg" style="width:100%">
+            </div>
+
+            <!-- Next/previous controls -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            <!-- Caption text -->
+            <div class="caption-container">
+                <p id="caption"></p>
+            </div>
+
+            <!-- Thumbnail image controls -->
+            <div class="column">
+                <img class="demo" src="../assets/img/galeria/varios/small/1.jpeg" onclick="currentSlide(1)" alt="">
+            </div>
+            <div class="column">
+                <img class="demo" src="../assets/img/galeria/varios/small/2.jpeg" onclick="currentSlide(2)" alt="">
+            </div>
+            <div class="column">
+                <img class="demo" src="../assets/img/galeria/varios/small/3.jpeg" onclick="currentSlide(3)" alt="">
+            </div>
+            <div class="column">
+                <img class="demo" src="../assets/img/galeria/varios/small/4.jpeg" onclick="currentSlide(4)" alt="">
+            </div>
+            <div class="column">
+                <img class="demo" src="../assets/img/galeria/varios/small/5.jpeg" onclick="currentSlide(5)" alt="">
+            </div>
+            </div>
+            <div class="column">
+                <img class="demo" src="../assets/img/galeria/varios/small/6.jpeg" onclick="currentSlide(6)" alt="">
+            </div>
+            <div class="column">
+                <img class="demo" src="../assets/img/galeria/varios/small/7.jpeg" onclick="currentSlide(7)" alt="">
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/galeria.js"></script>
+
+</body>
+
+</html>
