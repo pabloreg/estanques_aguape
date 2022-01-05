@@ -1,4 +1,4 @@
-const knex = require("../bd/config");
+const knex = require("../db/config");
 
 
 console.log('entro al controller usuario')

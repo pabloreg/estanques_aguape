@@ -17,8 +17,8 @@ app.set('views',path.join(__dirname,'views'))
 hbs.registerPartials(path.join(__dirname,'views/partials'))
 
 //ruteo
-app.use('/api/usuario',require('./routes/usuario'))
-app.get('/api/usuario', ()=>{res.render('index')})
+app.use('/pages/api/usuario',require('./routes/usuario'))
+app.get('/pages/api/usuario', ()=>{res.render('index')})
 
 
 app.listen(port, () => {
